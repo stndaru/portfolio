@@ -1,0 +1,51 @@
+html, body {
+    font-family: sans-serif;
+}
+
+div {
+    text-align: center;
+}
+
+.row {
+    background-color: rgb(11, 11, 65);
+    color: white;
+    display: flex;
+    flex-direction: row;            /* row places it sideways, column places it normally downwards */
+    justify-content: space-between; 
+    align-items: center;            /* align depends on the flex direction. row will align above and bottom, column align left and right */
+    padding: 20px;                  /* space for content inside and the border of the box */
+    margin: 20px;                   /* space for the content and the outside of the content */
+    margin-bottom: 50px;
+    font-size: calc(2vw);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    object-fit: cover;
+}
+
+.fasilkom {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 0, 0);
+}
+
+.fasilkom img {
+    height: 200px;
+    border-radius: 10px;            /* can also use percentage */
+    margin: 1rem 1rem 1rem 1rem ;   /* top right bottom left */
+}
