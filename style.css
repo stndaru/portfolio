@@ -68,8 +68,8 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0% 5% 5% 5%;
-    padding: 30px;
+    margin: 0% 7% 5% 7%;
+    padding: 0px 10px 0px 10px;
     /* box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3); */
     border-radius: 20px;
     animation-name: firsttime;
@@ -187,8 +187,8 @@ a {
         flex-direction: column;
         justify-content: center; 
         align-items: center;
-        margin: 20px; 
-        padding: 20px;          
+        margin: 10px 15px 0px 15px; 
+        padding: 10px 15px 0px 15px;          
     }
     .topnav-list .navcontent, .topnav-list .navcontent-active {
         padding: 10px 15px 10px 15px;
