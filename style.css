@@ -186,7 +186,13 @@ a {
         display: flex;
         flex-direction: column;
         justify-content: center; 
-        align-items: center;           
+        align-items: center;
+        margin: 20px; 
+        padding: 20px;          
+    }
+    .topnav-list .navcontent, .topnav-list .navcontent-active {
+        padding: 10px 15px 10px 15px;
+        margin: 10px;
     }
 }
 
