@@ -23,7 +23,6 @@ html, body {
     display: flex;
     align-items: center;
     padding: 10px 15px 10px 15px;
-    margin-right: 15px;
     transition: 0.3s;
     border-radius: 20px;
 }
