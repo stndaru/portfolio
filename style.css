@@ -29,7 +29,7 @@ html, body {
     animation: hoverout 0.3s forwards;
 }
 
-.navcontent a, .navcontent-active a, .navcontent a img {
+.navcontent a, .navcontent-active a, .navcontent img {
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
