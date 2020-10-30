@@ -32,6 +32,13 @@ html, body {
 .navcontent-active, .navcontent-active a {
     background-color: black;
     color: azure;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 .topnav-list .navcontent:hover, .topnav-list .navcontent-active:hover {
@@ -90,15 +97,16 @@ a {
 
 .coming-soon-img-text {
     visibility: hidden;
+    opacity: 0%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 10px 40px 40px 40px;
+    animation: visibilityout 0.5s forwards;
 }
 
 .coming-soon-content:hover .coming-soon-img-text {
-    transition: 0.2s;
-    visibility: visible;
+    animation: visibilityin 0.5s forwards;
 }
 .coming-soon-content:hover {
     animation: hoverinenlarge 0.3s forwards;
@@ -245,4 +253,21 @@ a {
     }
     to {
     }
+}
+
+@keyframes visibilityin {
+    from{
+    } 
+    to{
+        visibility: visible;
+        opacity: 100%;
+    }
+}
+
+@keyframes visibilityout {
+    from{
+        visibility: visible;
+        opacity: 100%;
+    }
+    to{}
 }
