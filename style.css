@@ -29,9 +29,7 @@ html, body {
     animation: hoverout 0.3s forwards;
 }
 
-.navcontent-active, .navcontent-active a {
-    background-color: black;
-    color: azure;
+.navcontent a, .navcontent-active a, .navcontent img {
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
@@ -39,6 +37,11 @@ html, body {
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
+}
+
+.navcontent-active, .navcontent-active a {
+    background-color: black;
+    color: azure;
 }
 
 .topnav-list .navcontent:hover, .topnav-list .navcontent-active:hover {
