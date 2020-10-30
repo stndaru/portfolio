@@ -30,6 +30,7 @@ html, body {
 }
 
 .navcontent a, .navcontent-active a, .navcontent img {
+    -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
