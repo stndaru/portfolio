@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.topnav {
+    display: flex;
+    flex-direction: row;            /* row places it sideways, column places it normally downwards */
+    justify-content: space-between; 
+    align-items: center;            /* align depends on the flex direction. row will align above and bottom, column align left and right */
+    padding: 20px;                  /* space for content inside and the border of the box */ /* top right bottom left */
+    margin: 20px 20px 0px 20px;                   /* space for the content and the outside of the content */
+    font-size: 18px;
+}
+
+.topnav-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.topnav-list .navcontent, .topnav-list .navcontent-active {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 15px 10px 15px;
+    margin: 0px 10px 0px 10px;
+    border-radius: 20px;
+    animation: hoverout 0.3s forwards;
+}
+
+.navcontent a, .navcontent-active a, .navcontent img {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.navcontent-active, .navcontent-active a {
+    background-color: black;
+    color: azure;
+}
+
+.topnav-list .navcontent:hover, .topnav-list .navcontent-active:hover {
+    /* border-style: solid;
+    border-width: 1px; */
+    animation: hoverin 0.3s forwards;
+}
+
+.topnav img {
+    height: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.credit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    animation-name: firsttime;
+    animation-duration: 1s;
+    margin-bottom: 30px;
+}
+
+.credit h5, p {
+    padding: 0px;
+    margin: 0px;
+}
+
+.coming-soon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0% 7% 5% 7%;
+    padding: 0px 10px 0px 10px;
+    /* box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3); */
+    border-radius: 20px;
+    animation-name: firsttime;
+    animation-duration: 1s;
+}
+
+.coming-soon-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    margin-top: 30px;
+    border-radius: 20px;
+    animation: hoveroutenlarge 0.3s forwards;
+}
+
+.coming-soon-img-text {
+    visibility: hidden;
+    opacity: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 40px 40px 40px;
+    animation: visibilityout 0.5s forwards;
+}
+
+.coming-soon-content:hover .coming-soon-img-text {
+    animation: visibilityin 0.5s forwards;
+}
+.coming-soon-content:hover {
+    animation: hoverinenlarge 0.3s forwards;
+}
+
+.coming-soon-img {
+    display: flex;
+    float: bottom;
+    background-image: url("pictures/comingsoon_main.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 30vw;
+    border-radius: 20px;
+}
+
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5% 5% 5% 5%;
+    padding: 30px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    animation-name: firsttime;
+    animation-duration: 1s;
+}
+
+.main-content-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px 0px 20px;
+}
+
+.main-content-text p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-content-text h2 {
+    margin: 30px 20px 0px 20px;
+    padding-bottom: 20px;
+}
+
+.main-content-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 0px;
+    border-radius: 20px;
+}
+
+.main-content-img img {
+    width: 300px;   height: 100%;
+    object-fit: scale-down;
+    padding: 20px;
+    border-radius: 20px;
+    animation: hoverout 0.3s forwards;
+}
+
+.main-content-img img:hover {
+    animation: hoverin 0.3s forwards;
+}
+
+.accord-wrap {
+    animation: hoverout 0.3s forwards;
+    margin-top: 20px;
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-accord {
+    width: 60vw;     
+    height: 80vh;
+    display: flex;
+    /* animation: hoverout 0.3s forwards; */
+}
+
+.img-accord .img {
+    flex: 1;
+    height: 60vh;
+    transform: skew(5deg);
+    margin: 0 2px;
+    transition: all 0.3s;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+}
+
+.img1{ background-image: url(pictures/edit1.jpg); }
+.img2{ background-image: url(pictures/edit2.jpg); }
+.img3{ background-image: url(pictures/edit3.jpg); }
+.img4{ background-image: url(pictures/edit4.jpg); }
+.img5{ background-image: url(pictures/edit5.jpg); }
+
+/* .accord-wrap .img-accord:hover {
+    animation: hoverin 0.3s forwards;
+} */
+
+.img-accord:hover .img {
+    transform: skew(0);
+}
+
+.img-accord .img:hover{
+    flex: 5;
+}
+
+
+@media screen and (max-width: 1260px) {
+    .main-content-img img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50vw;
+        height: 100%;
+        object-fit: scale-down;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .topnav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        margin: 10px 15px 0px 15px; 
+        padding: 10px 15px 0px 15px;          
+    }
+    .topnav-list .navcontent, .topnav-list .navcontent-active {
+        padding: 10px 15px 10px 15px;
+        margin: 10px;
+    }
+}
+
+@keyframes firsttime {
+    from {
+        transform: translate(0px, 10vh);
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes hoverin {
+    from {
+    }
+    to {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+        transform: translate(-5px, -5px);
+    }
+}
+
+@keyframes hoverout {
+    from {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+        transform: translate(-5px, -5px);
+    }
+    to {
+    }
+}
+
+@keyframes hoverinenlarge {
+    from {
+    }
+    to {
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+        transform: translate(-5px, -5px);
+        height: 40%;
+        padding-top: 0px;
+    }
+}
+
+@keyframes hoveroutenlarge {
+    from {
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+        transform: translate(-5px, -5px);
+        height: 40%;
+        padding-top: 0px;
+    }
+    to {
+    }
+}
+
+@keyframes visibilityin {
+    from{
+    } 
+    to{
+        visibility: visible;
+        opacity: 100%;
+    }
+}
+
+@keyframes visibilityout {
+    from{
+        visibility: visible;
+        opacity: 100%;
+    }
+    to{}
+}
