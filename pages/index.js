@@ -49,6 +49,17 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
+
+          <a
+            href="/porto-dev"
+            className={styles.card}
+          >
+            <h2>Visit Website &rarr;</h2>
+            <p>
+              Visit the actual website, currently in development environment.
+            </p>
+          </a>
+
         </div>
       </main>
 
